@@ -20,3 +20,5 @@ klikvpn/
 └── icons/
 └── main_website_icon/
 └── main_website_icon_2.PNG # Favicon и логотип
+<img width="995" height="198" alt="{E26ADC97-6A4F-4021-AAC8-25712755194E}" src="https://github.com/user-attachments/assets/3a6c6ebb-952d-48b0-b446-b9d856e91f32" />
+
