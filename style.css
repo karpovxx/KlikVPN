@@ -1,0 +1,128 @@
+body {
+    background: black;
+    color: white;
+    font-family: sans-serif;
+
+
+}
+
+header {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 40px;
+
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 30px;
+}
+.brand_logo {
+    width: 70px;
+    height: 44px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #00CED1, #6c5ce7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    flex-shrink: 0; /* лого не сплюзивается */
+    box-shadow: 0 0 30px 4px rgba(108, 92, 231, 0.7);
+}
+
+
+
+
+
+
+.titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px 10px;
+}
+.main_title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+    transition: transform 0.6s;
+}
+
+.main_title:hover {
+    transform: translateY(-2px);
+    
+}
+.submain_title {
+    font-size: 13px;
+    font-weight: 400;
+    color: #8b93a7;
+    margin: 0;
+    line-height: 1.2;
+}
+
+
+
+
+
+
+
+ul {
+    list-style: none;
+}
+nav {
+    display: flex;
+    align-items: center;
+    padding: 16px 32px;
+    gap:40 px;
+}
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__list a {
+    color: #c5cbd9;          
+    text-decoration: none;   
+    font-size: 15px;
+    transition: color 0.2s;  
+}
+
+.nav__list a:hover {
+    color: white;  
+    
+}
+
+.nav__list button {
+    background: linear-gradient(135deg, #00CED1, #6c5ce7); /* градиент */
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+
+.nav__list button:hover {
+    transform: translateY(-2px);  
+    box-shadow: 0 0 30px 4px rgba(108, 92, 231, 0.7);
+}
+
+
+
