@@ -1,0 +1,33 @@
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+hr {
+    -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+
+
+body {
+    background: black;
+    color: white;
+    font-family: sans-serif;
+
+
+}
+
+
+
+
+
+
+
+
