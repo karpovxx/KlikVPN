@@ -72,3 +72,104 @@
         justify-content: center;
     }
 }
+/* Авторы проекта — нижняя строка футера */
+.footer_authors {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    max-width: var(--page-max);
+    margin: 0 auto;
+    padding: 18px var(--page-pad) 28px;
+
+    border-top: 1px solid #1f242e;
+
+    font-size: 13px;
+    color: #8b93a7;
+}
+
+.footer_authors_label {
+    color: #8b93a7;
+}
+
+.footer_author {
+    color: #c5cbd9;
+    font-weight: 500;
+}
+
+.footer_authors_sep {
+    color: #3a3f4a;
+}
+
+@media (max-width: 480px) {
+    .footer_authors {
+        font-size: 12px;
+        padding: 14px var(--page-pad) 22px;
+        flex-direction: column;
+        gap: 4px;
+    }
+    .footer_authors_sep {
+        display: none;
+    }
+}
+/* Авторы проекта — нижняя строка футера */
+.footer_authors {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    max-width: var(--page-max);
+    margin: 0 auto;
+    padding: 18px var(--page-pad) 0;
+
+    border-top: 1px solid #1f242e;
+
+    font-size: 13px;
+    color: #8b93a7;
+}
+
+.footer_authors_label {
+    color: #8b93a7;
+}
+
+.footer_author {
+    color: #c5cbd9;
+    font-weight: 500;
+}
+
+.footer_authors_sep {
+    color: #3a3f4a;
+}
+
+/* Город и год — отдельной строкой под авторами */
+.footer_city {
+    max-width: var(--page-max);
+    margin: 0 auto;
+    padding: 8px var(--page-pad) 28px;
+
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: #555b68;
+}
+
+
+@media (max-width: 480px) {
+    .footer_authors {
+        font-size: 12px;
+        padding: 14px var(--page-pad) 0;
+        flex-direction: column;
+        gap: 4px;
+    }
+    .footer_authors_sep {
+        display: none;
+    }
+    .footer_city {
+        padding: 6px var(--page-pad) 22px;
+        font-size: 11px;
+    }
+}
