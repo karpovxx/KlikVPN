@@ -1,35 +1,45 @@
-# KlikVPN
+# 🛡️ KlikVPN
 
-Лендинг для сервиса виртуальных серверов **KlikVPN** — виртуальные серверы нового поколения с интеллектуальной маршрутизацией трафика. Подключение в одно касание через бота, без сложных настроек.
+**Стабильный VPN по честной цене** — от 49 ₽ в месяц, 30 дней бесплатно, подключение за 30 секунд через бота ВКонтакте.
 
-![Статус](https://img.shields.io/badge/status-in%20development-yellow)
-![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
 
-## 📋 О проекте
+---
 
-Статический лендинг с тёмной темой оформления. Разделы страницы:
+## 📖 О проекте
 
-- **шапка** с меню (на телефоне — кнопка ☰);
-- **первый экран** с преимуществами и кнопками призыва к действию;
-- **«Как подключить»** — 3 шага и список устройств (`css/howto.css`);
-- **«Тарифы»** — карточки тарифов и способы оплаты (`css/tariffs.css`, `css/pay.css`);
-- **«Частые вопросы»** — раскрывающиеся ответы на тегах `<details>` (`css/faq.css`);
-- **призыв в конце страницы** (`css/cta.css`) и **подвал** (`css/footer.css`).
+**KlikVPN** — лендинг VPN-сервиса с тёмным дизайном, плавными анимациями и подключением через Telegram/VK-бота. Без фреймворков, без сборщиков — чистые HTML, CSS и минимум JavaScript.
 
-Общие стили разделов и кнопок (`.section`, `.btn`) — в `css/style.css`. Все кнопки ведут в диалог с ботом сообщества: `https://vk.me/club239276266`.
+Сайт объясняет, что такое KlikVPN, показывает тарифы, отвечает на частые вопросы и ведёт пользователя в бота ВКонтакте для оформления подписки.
 
-Дизайн построен на контрасте: чёрный фон, белый текст, акцентные градиенты от бирюзового `#00CED1` до фиолетового `#6c5ce7`. Элементы «оживают» при наведении — поднимаются, светятся, увеличиваются.
+### Ключевые фичи
 
-## 🛠️ Стек технологий
+- 🎨 Тёмный дизайн с фирменным градиентом бирюзово-фиолетовый
+- ⚡ Анимации при скролле (появление блоков, вращение монеты-логотипа)
+- 📱 Адаптивная вёрстка: desktop / tablet / mobile
+- 💰 Тарифы: бесплатный пробный период + платные
+- ❓ FAQ на нативных `<details>` — без JavaScript
+- 🍔 Мобильное меню-бургер
+- 🎯 Плавная прокрутка к якорям
+- ♿ Поддержка `prefers-reduced-motion` — для пользователей, отключивших анимации
 
-- **HTML5** — семантическая разметка
-- **CSS3** — Flexbox, градиенты, transitions, `@keyframes`, `box-shadow`, адаптивная вёрстка (`@media`: планшет до 900px, телефон до 480px)
-- **JavaScript** — только кнопка меню ☰ на телефоне (`js/menu.js`)
-- **Favicon** — `icons/favicon-32.png` и `icons/apple-touch-icon.png` (вырезаны из `icons/main_website_icon_2.PNG`)
+---
 
-Проект **не требует сборки**, зависимостей или фреймворков — чистый HTML + CSS.
+## 🚀 Быстрый старт
 
-## 📁 Фото проекта
+### Способ 1. Локальный сервер (рекомендуется)
 
-<img width="1901" height="940" alt="{D3BCE12E-5302-46C9-A4E5-C7D0A05AFA4E}" src="https://github.com/user-attachments/assets/33221379-c157-4777-bca5-8f45565175f4" />
+```bash
+# Python 3
+python -m http.server 8000
+
+# Node.js
+npx serve
+
+# Или через VS Code
+# Установи расширение "Live Server" → правый клик на src/index.html → Open with Live Server
+
+![alt text]({C4659A50-5480-4423-B82C-ED1C51D46D95}.png)
