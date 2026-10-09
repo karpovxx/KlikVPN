@@ -42,4 +42,3 @@ npx serve
 # Или через VS Code
 # Установи расширение "Live Server" → правый клик на src/index.html → Open with Live Server
 
-![alt text]({C4659A50-5480-4423-B82C-ED1C51D46D95}.png)
