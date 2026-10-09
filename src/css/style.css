@@ -1,8 +1,19 @@
+/* Общие размеры страницы: шапка и блоки выравниваются по одной ширине */
+:root {
+    --page-max: 1200px;
+    --page-pad: 40px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 html {
     font-family: sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
 }
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     display: block;
@@ -17,28 +28,109 @@ hr {
 
 
 body {
+    margin: 0;
     background: black;
     color: white;
     font-family: sans-serif;
-
-
 }
 
 
-.jjj {
-    padding: 100px;
-    display: flex;
-
+/* Общий вид разделов: «Как подключить», «Тарифы», «Вопросы» */
+.section {
+    max-width: var(--page-max);
+    margin: 0 auto;
+    padding: 80px var(--page-pad);
 }
-.jjj_block {
-    background: red;
+
+.section_title {
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 0 0 12px;
+    text-align: center;
+}
+
+.section_subtitle {
+    max-width: 640px;
+    margin: 0 auto 48px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #8b93a7;
+    text-align: center;
+}
+
+.section_subtitle a {
+    color: #00FFFF;
+}
+
+
+/* Кнопки в разделах */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 52px;
+    padding: 14px 28px;
+
+    color: #ffffff;
+    text-decoration: none;
     border-radius: 14px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.3;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.btn_primary {
+    background: linear-gradient(135deg, #00CED1, #6c5ce7);
+}
+
+.btn_secondary {
+    background: #0d0d0d;
+    border: 1px solid #6c5ce7;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 30px 4px rgba(108, 92, 231, 0.7);
+}
+
+.btn_secondary:hover {
+    background: linear-gradient(135deg, #00CED1, #6c5ce7);
 }
 
 
+/* Планшет */
+@media (max-width: 900px) {
+    :root {
+        --page-pad: 24px;
+    }
+}
 
+/* Телефон */
+@media (max-width: 480px) {
+    :root {
+        --page-pad: 16px;
+    }
+    .section {
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+    .section_subtitle {
+        font-size: 15px;
+        margin-bottom: 32px;
+    }
+}
 
-
-
-
-
+/* Если в системе выключены анимации — не двигаем элементы */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}

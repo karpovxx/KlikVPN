@@ -1,0 +1,111 @@
+.tariffs_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 0 48px;
+    padding: 0;
+    list-style: none;
+}
+
+.tariffs_card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 28px;
+    background: #0d0d0d;
+    border: 1px solid #1f242e;
+    border-radius: 20px;
+}
+
+/* Главный тариф выделен рамкой и свечением */
+.tariffs_card_main {
+    border-color: #6c5ce7;
+    box-shadow: 0 0 40px 2px rgba(108, 92, 231, 0.35);
+}
+
+.tariffs_card_label {
+    position: absolute;
+    top: -13px;
+    left: 28px;
+    padding: 5px 12px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #00CED1, #6c5ce7);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tariffs_card_name {
+    margin: 0 0 16px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #c5cbd9;
+}
+
+.tariffs_card_price {
+    margin: 0 0 6px;
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.tariffs_card_price span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #8b93a7;
+}
+
+.tariffs_card_period {
+    margin: 0 0 24px;
+    font-size: 14px;
+    color: #8b93a7;
+}
+
+.tariffs_card_perks {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* кнопки во всех карточках на одной высоте */
+    gap: 10px;
+    margin: 0 0 28px;
+    padding: 0;
+    list-style: none;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #e0e4eb;
+}
+
+.tariffs_card_perks li::before {
+    content: "✓";
+    margin-right: 10px;
+    font-weight: 700;
+    color: #00FFFF;
+}
+
+.tariffs_card .btn {
+    width: 100%;
+}
+
+
+/* Планшет и телефон: карточки друг под другом */
+@media (max-width: 900px) {
+    .tariffs_list {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .tariffs_card {
+        padding: 28px 20px 24px;
+    }
+    .tariffs_card_label {
+        left: 20px;
+    }
+    .tariffs_card_price {
+        font-size: 38px;
+    }
+}

@@ -1,116 +1,263 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="icons/main_website_icon/main_website_icon_2.PNG" type="image/x-icon">
-    <title>KlikVPN</title>
+    <title>KlikVPN — VPN за 49 ₽ в месяц, 30 дней бесплатно</title>
+    <meta name="description" content="KlikVPN — VPN за 49 ₽ в месяц. 30 дней бесплатно, безлимитный трафик, до 3 устройств. Подключение через бота ВКонтакте за 30 секунд.">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Превью ссылки в ВК и мессенджерах -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="KlikVPN">
+    <meta property="og:title" content="KlikVPN — стабильный VPN по честной цене">
+    <meta property="og:description" content="30 дней бесплатно, дальше от 49 ₽ в месяц. Подключение через бота ВКонтакте за 30 секунд.">
+    <!-- Адрес картинки должен быть полным. Когда появится домен, раскомментируйте и впишите его:
+    <meta property="og:image" content="https://ВАШ-ДОМЕН.РУ/photo/main_photo.jpg"> -->
+
+    <link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/mid.css">
-    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/howto.css">
+    <link rel="stylesheet" href="css/tariffs.css">
     <link rel="stylesheet" href="css/pay.css">
-    <meta name="description" content="...">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/cta.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <script src="js/menu.js" defer></script>
+    <script src="js/scroll-animations.js" defer></script>
 </head>
 <body>
 
+    <header class="header_main" id="header">
 
-
-
-    <header class="header_main" id="headar">
-        
-        <section class="header_brand">
-
-            <div class="header_brand_logo header_logo_icon">
-                <!-- <link rel="stylesheet" href="/icons/main_website_icon_2.PNG"> -->
-                VPN
-            </div>
-
+        <a class="header_brand" href="#">
+            <div class="header_brand_logo">VPN</div>
             <div class="header_titles">
-                <h1 class="header_main_title">KlikVPN</h1>
-                <h2 class="header_submain_title">Ваш личный виртуальный сервис</h2>
+                <span class="header_main_title">KlikVPN</span>
+                <span class="header_submain_title">Ваш личный виртуальный сервис</span>
             </div>
-        </section>
+        </a>
 
-        <nav class="header_nav">
-            <ui class="header_nav__list">
-                <li><a href="#">Возможности</a></li>
-                <li><a href="#">Тарифы</a></li>
-                <li><a href="#">Локации</a></li>
-                <li><a href="#">Поддержка</a></li>
-                <li><a href="#">Вопросы</a></li>
-                <button>Скачать</button>
-            </ui>
+        <!-- Кнопка меню — видна только на телефоне -->
+        <button class="header_burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="header_nav">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="header_nav" id="header_nav">
+            <ul class="header_nav__list">
+                <li><a href="#howto">Как подключить</a></li>
+                <li><a href="#tariffs">Тарифы</a></li>
+                <li><a href="#faq">Вопросы</a></li>
+                <li><a href="https://vk.me/club239276266" target="_blank" rel="noopener">Поддержка</a></li>
+                <li><a class="header_nav__cta" href="https://vk.me/club239276266" target="_blank" rel="noopener">Подключить</a></li>
+            </ul>
         </nav>
-        
+
     </header>
-
-
 
 
 <main class="main" id="main">
 
-
-
     <section class="mid">
-        <section class="mid_present">
+        <div class="mid_present">
             <div class="mid_badge">
                 <span class="mid_badge_flag">RU Работаем в России с 2026 года</span>
             </div>
-            <div>
-                <h1 class="mid_present_title">Стабильный VPN<br><span class="mid_accent">по честной цене</span></h1>
-            
+
+            <h1 class="mid_present_title">Стабильный VPN<br><span class="mid_accent">по честной цене</span></h1>
+
+            <p class="mid_present_subtitle">Безлимитный трафик и защищённое соединение. <br>Подключение в одно касание через нашего бота ВКонтакте — без сложных настроек.</p>
+
+            <ul class="mid_features">
+                <li class="mid_features_item">🚀 Настройка за 30 секунд</li>
+                <li class="mid_features_item">📱 Работает на всех устройствах</li>
+                <li class="mid_features_item">💸 Низкие цены</li>
+                <li class="mid_features_item">👥 До 3 устройств</li>
+                <li class="mid_features_item">🔒 Шифрование трафика</li>
+                <li class="mid_features_item">🔔 Напомним о продлении</li>
+            </ul>
+
+            <div class="mid_price">
+                <a class="mid_btn_price btn_price_1" href="https://vk.me/club239276266" target="_blank" rel="noopener">Попробовать бесплатно<br>30 дней</a>
+                <span class="mid_or">или</span>
+                <a class="mid_btn_price btn_price_2" href="#tariffs">Тарифы<br>от 49 ₽ в месяц</a>
             </div>
-            <div>
-                <p class="mid_present_subtitle">Настройка за 30 секунд! <br>Подключение в одно касание через нашего бота — без сложных настроек.</p>
-            </div>
-                <ul class="mid_features">
-                    <li class="mid_features_item">🚀 Настройка за 30 секунд</li>
-                    <li class="mid_features_item">📱 Работает на всех устройствах</li>
-                    <li class="mid_features_item">💸 Низкие цены</li>
-                    <li class="mid_features_item">🌐 x стран</li>
-                    <li class="mid_features_item">🔒 Шифрование трафика</li>
-                    <li class="mid_features_item">🔄 Автопродление???</li>
-                
-                </ul>
-                <div class="mid_price">
-                    <!-- <button class="btn_price">Попробовать<br>2 ₽ в день</button> -->
-                    <a class="mid_btn_price btn_price_1" href="#">Попробовать за<br>2 ₽ в день</a>
-                    <span сlass="mid_or">или</span>
-                    <!-- <button class="btn_price">От 49 ₽  в месяц</button> -->
-                    
-                    <a class="mid_btn_price btn_price_2" href="#">От 49 ₽  в месяц</a>
-                    
-                </div>
-        </section>
+            <p class="mid_price_note">Можно купить любое число дней — по 2 ₽ за день</p>
+        </div>
 
-
-
-        <section class="mid_main_photo">
+        <div class="mid_main_photo">
             <div class="mid_block_main_photo">
-                <img class="mid_img_main_photo" src="/src/photo/main_photo.jpg" alt="KlikVPN">
+                <img class="mid_img_main_photo" src="photo/main_photo.webp" width="838" height="838" alt="Логотип KlikVPN">
             </div>
-        </section>
-
-
-        
+        </div>
     </section>
-    <section class="pay">
-            <div class="pay_bank color_bank_1"><a href="#"></a>Т-Банк</div>
-            <div class="pay_bank color_bank_2"><a href="#"></a>Сбербанк</div>
-            <div class="pay_bank color_bank_3"><a href="#"></a>Альфа</div>
+
+    <!-- Как подключить -->
+    <section class="section howto" id="howto">
+        <h2 class="section_title">Подключение за&nbsp;3&nbsp;шага</h2>
+        <p class="section_subtitle">Регистрироваться на сайте не нужно — всё происходит в сообщениях ВКонтакте.</p>
+
+        <ol class="howto_steps">
+            <li class="howto_step">
+                <span class="howto_step_num">1</span>
+                <h3 class="howto_step_title">Напишите боту</h3>
+                <p class="howto_step_text">Откройте <a href="https://vk.me/club239276266" target="_blank" rel="noopener">диалог с KlikVPN</a> во ВКонтакте. Бот сразу подарит 30 дней бесплатно.</p>
+            </li>
+            <li class="howto_step">
+                <span class="howto_step_num">2</span>
+                <h3 class="howto_step_title">Установите Happ</h3>
+                <p class="howto_step_text">Через это приложение работает VPN. Ссылку для вашего устройства бот пришлёт в разделе «Как подключить».</p>
+            </li>
+            <li class="howto_step">
+                <span class="howto_step_num">3</span>
+                <h3 class="howto_step_title">Нажмите «Подключить в&nbsp;Happ»</h3>
+                <p class="howto_step_text">Приложение откроется и само добавит подписку. Останется включить VPN.</p>
+            </li>
+        </ol>
+
+        <div class="howto_devices">
+            <span class="howto_devices_title">Работает на:</span>
+            <ul class="howto_devices_list">
+                <li class="howto_device">🤖 Android</li>
+                <li class="howto_device">🍏 iPhone и iPad</li>
+                <li class="howto_device">🪟 Windows</li>
+                <li class="howto_device">💻 Mac</li>
+            </ul>
+        </div>
     </section>
-     
 
 
+    <!-- Тарифы -->
+    <section class="section tariffs" id="tariffs">
+        <h2 class="section_title">Тарифы</h2>
+        <p class="section_subtitle">На всех тарифах — безлимитный трафик и до 3 устройств. Новые дни добавляются к текущей подписке.</p>
+
+        <ul class="tariffs_list">
+            <li class="tariffs_card">
+                <h3 class="tariffs_card_name">Пробный</h3>
+                <p class="tariffs_card_price">0 ₽</p>
+                <p class="tariffs_card_period">30 дней</p>
+                <ul class="tariffs_card_perks">
+                    <li>Безлимитный трафик</li>
+                    <li>До 3 устройств</li>
+                    <li>Без привязки карты</li>
+                    <li>Выдаётся один раз</li>
+                </ul>
+                <a class="btn btn_secondary" href="https://vk.me/club239276266" target="_blank" rel="noopener">Получить бесплатно</a>
+            </li>
+            <li class="tariffs_card tariffs_card_main">
+                <span class="tariffs_card_label">Выгоднее</span>
+                <h3 class="tariffs_card_name">1 месяц</h3>
+                <p class="tariffs_card_price">49 ₽</p>
+                <p class="tariffs_card_period">30 дней — меньше 2 ₽ в день</p>
+                <ul class="tariffs_card_perks">
+                    <li>Безлимитный трафик</li>
+                    <li>До 3 устройств</li>
+                    <li>Напомним, когда пора продлить</li>
+                </ul>
+                <a class="btn btn_primary" href="https://vk.me/club239276266" target="_blank" rel="noopener">Купить в боте</a>
+            </li>
+            <li class="tariffs_card">
+                <h3 class="tariffs_card_name">Любой срок</h3>
+                <p class="tariffs_card_price">2 ₽ <span>/ день</span></p>
+                <p class="tariffs_card_period">от 1 до 365 дней</p>
+                <ul class="tariffs_card_perks">
+                    <li>Безлимитный трафик</li>
+                    <li>До 3 устройств</li>
+                    <li>Готовые варианты: 7, 14, 60 и 90 дней</li>
+                </ul>
+                <a class="btn btn_secondary" href="https://vk.me/club239276266" target="_blank" rel="noopener">Выбрать срок</a>
+            </li>
+        </ul>
+
+        <div class="pay">
+            <p class="pay_title">Оплата переводом с карты любого банка</p>
+            <ul class="pay_list">
+                <li class="pay_bank color_bank_1">Т-Банк</li>
+                <li class="pay_bank color_bank_2">Сбербанк</li>
+                <li class="pay_bank color_bank_3">Альфа</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- Вопросы и ответы -->
+    <section class="section faq" id="faq">
+        <h2 class="section_title">Частые вопросы</h2>
+        <p class="section_subtitle">Не нашли ответ — <a href="https://vk.me/club239276266" target="_blank" rel="noopener">напишите нам</a>, ответит живой человек.</p>
+
+        <div class="faq_list">
+            <details class="faq_item">
+                <summary class="faq_question">Есть ли бесплатный период?</summary>
+                <p class="faq_answer">Да, 30 дней. Бот дарит их сам, как только вы впервые напишете сообществу, — карта не нужна. Бесплатный период выдаётся один раз.</p>
+            </details>
+            <details class="faq_item">
+                <summary class="faq_question">Сколько устройств можно подключить?</summary>
+                <p class="faq_answer">До 3 на одной подписке — например, телефон, ноутбук и телевизор. Сменили телефон — удалите старый в боте: «Моя подписка» → «Мои устройства».</p>
+            </details>
+            <details class="faq_item">
+                <summary class="faq_question">Как оплатить?</summary>
+                <p class="faq_answer">Выберите тариф в боте и нажмите «Оплатить» — бот покажет реквизиты. Переведите сумму с карты любого банка и нажмите «Я оплатил». Мы проверим перевод, включим подписку, и бот пришлёт сообщение.</p>
+            </details>
+            <details class="faq_item">
+                <summary class="faq_question">Как продлить подписку?</summary>
+                <p class="faq_answer">Купите любой тариф ещё раз — дни добавятся к текущему сроку, оставшиеся не пропадут. Бот заранее напомнит об окончании: за три дня, за день и в последний день.</p>
+            </details>
+            <details class="faq_item">
+                <summary class="faq_question">Будут ли работать ВКонтакте и банки?</summary>
+                <p class="faq_answer">Некоторые российские сервисы — ВКонтакте, банки, Госуслуги — не открываются через зарубежный VPN. В Happ можно настроить, чтобы они работали напрямую. Инструкция есть в боте: «Поддержка» → «Не открываются VK или банк».</p>
+            </details>
+            <details class="faq_item">
+                <summary class="faq_question">На Wi-Fi работает, а на мобильном интернете нет</summary>
+                <p class="faq_answer">Иногда операторы ограничивают мобильный интернет «белыми списками»: открываются только разрешённые сайты, а VPN не пропускается. Это не поломка сервиса — пока ограничения действуют, подключайтесь через Wi-Fi.</p>
+            </details>
+            <details class="faq_item">
+                <summary class="faq_question">Не подключается — что делать?</summary>
+                <p class="faq_answer">Обновите подписку в Happ, выберите другой сервер или смените сеть. Не помогло — нажмите в боте «Поддержка» → «Позвать человека», и вам ответит оператор.</p>
+            </details>
+            <details class="faq_item">
+                <summary class="faq_question">Можно получить дни бесплатно?</summary>
+                <p class="faq_answer">Да. Пригласите друга по своей ссылке из раздела «Пригласить друга»: за каждого, кто впервые напишет боту, вы получите +3 дня, а друг — 30 дней бесплатно.</p>
+            </details>
+        </div>
+    </section>
+
+
+    <!-- Призыв в конце страницы -->
+    <section class="cta">
+        <div class="cta_box">
+            <h2 class="cta_title">Попробуйте 30&nbsp;дней бесплатно</h2>
+            <p class="cta_text">Без привязки карты — просто напишите боту ВКонтакте.</p>
+            <a class="btn btn_primary" href="https://vk.me/club239276266" target="_blank" rel="noopener">Подключить VPN</a>
+        </div>
+    </section>
 
 </main>
-    
-    <span>
 
-    </span>
-    <footer>
-
+    <footer class="footer">
+        <div class="footer_inner">
+            <div class="footer_brand">
+                <div class="footer_logo">VPN</div>
+                <div>
+                    <div class="footer_name">KlikVPN</div>
+                    <div class="footer_copy">© 2026 KlikVPN</div>
+                </div>
+            </div>
+            <ul class="footer_links">
+                <li><a href="#howto">Как подключить</a></li>
+                <li><a href="#tariffs">Тарифы</a></li>
+                <li><a href="#faq">Вопросы</a></li>
+                <li><a href="https://vk.com/club239276266" target="_blank" rel="noopener">Сообщество ВКонтакте</a></li>
+                <li><a href="https://vk.me/club239276266" target="_blank" rel="noopener">Поддержка</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
