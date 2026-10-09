@@ -28,11 +28,13 @@
     padding: 0;
 }
 
+/* 3D-контекст для вращения монеты */
 .mid_block_main_photo {
     width: 100%;
     max-width: 460px;
     display: flex;
     justify-content: center;
+    perspective: 1200px;
 }
 
 .mid_img_main_photo {
@@ -42,6 +44,11 @@
     height: auto;
     border-radius: 20px;
     object-fit: cover;
+
+    /* Готовность к 3D-повороту */
+    transform-style: preserve-3d;
+    will-change: transform;
+    backface-visibility: visible;
 }
 
 
@@ -75,7 +82,7 @@
 
 
 .mid_present_title {
-    font-size: clamp(34px, 6vw, 56px); /* от 34px на телефоне до 56px на компьютере */
+    font-size: clamp(34px, 6vw, 56px);
     font-weight: 800;
     line-height: 1.1;
     margin: 0 0 24px;
@@ -134,7 +141,6 @@
     min-height: 64px;
     padding: 12px 20px;
 
-
     color: #ffffff;
     text-decoration: none;
     border-radius: 14px;
@@ -174,6 +180,14 @@
     margin: 16px 0 0;
     font-size: 14px;
     color: #8b93a7;
+}
+
+
+/* Не крутим монету, если пользователь отключил анимации */
+@media (prefers-reduced-motion: reduce) {
+    .mid_img_main_photo {
+        transform: none !important;
+    }
 }
 
 

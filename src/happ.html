@@ -7,6 +7,7 @@
     <meta name="description" content="Пошаговая инструкция: как установить Happ и подключить VPN KlikVPN.">
 
     <link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
@@ -16,6 +17,7 @@
 <body>
 
     <header class="header_main" id="header">
+
         <a class="header_brand" href="index.html">
             <div class="header_brand_logo">VPN</div>
             <div class="header_titles">
@@ -24,16 +26,25 @@
             </div>
         </a>
 
-        <nav class="header_nav">
+        <button class="header_burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="header_nav">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="header_nav" id="header_nav">
             <ul class="header_nav__list">
                 <li><a href="index.html">← На главную</a></li>
+                <li><a href="index.html#howto">Как подключить</a></li>
                 <li><a href="index.html#tariffs">Тарифы</a></li>
+                <li><a href="index.html#faq">Вопросы</a></li>
                 <li><a class="header_nav__cta" href="https://vk.me/club239276266" target="_blank" rel="noopener">Подключить</a></li>
             </ul>
         </nav>
+
     </header>
 
+
     <main class="section happ">
+
         <h1 class="section_title">Подключение через Happ</h1>
         <p class="section_subtitle">
             Happ — бесплатное приложение для работы с VPN-подписками.
@@ -94,7 +105,9 @@
             <strong>Важно:</strong> Happ не содержит встроенных серверов.
             Ссылку-подписку вы получаете у нас в боте KlikVPN.
         </div>
+
     </main>
+
 
     <footer class="footer">
         <div class="footer_inner">
@@ -106,12 +119,26 @@
                 </div>
             </div>
             <ul class="footer_links">
-                <li><a href="index.html">Главная</a></li>
+                <li><a href="index.html#howto">Как подключить</a></li>
                 <li><a href="index.html#tariffs">Тарифы</a></li>
+                <li><a href="index.html#faq">Вопросы</a></li>
+                <li><a href="https://vk.com/club239276266" target="_blank" rel="noopener">Сообщество ВКонтакте</a></li>
                 <li><a href="https://vk.me/club239276266" target="_blank" rel="noopener">Поддержка</a></li>
             </ul>
         </div>
+
+        <div class="footer_authors">
+            <span class="footer_authors_label">Авторы проекта:</span>
+            <span class="footer_author">Резяпов Данил</span>
+            <span class="footer_authors_sep">·</span>
+            <span class="footer_author">Карпов Руслан</span>
+        </div>
+
+        <div class="footer_city">
+            Уфа · 2026
+        </div>
     </footer>
 
+    <script src="js/menu.js" defer></script>
 </body>
 </html>
