@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 40px;                      
-    padding: 80px 60px;
+    padding: 50px 60px;
     max-width: 1400px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -135,7 +135,7 @@
     min-height: 64px;                 
     padding: 12px 20px;
 
-    background: linear-gradient(135deg, #00CED1, #6c5ce7);
+    
     color: #ffffff;
     text-decoration: none;
     border-radius: 14px;
@@ -146,6 +146,23 @@
     transition: transform 0.2s, box-shadow 0.2s;
     box-sizing: border-box;
 }
+
+.btn_price_1 {
+    background: linear-gradient(135deg, #00CED1, #6c5ce7);
+}
+
+.btn_price_2 {
+    /* background: linear-gradient(135deg, #062c2d, #1f242e);
+    border: 1px solid #1f242e; */
+}
+
+
+.btn_price_2:hover {
+    border: 2px solid white;
+    background: linear-gradient(135deg, #00CED1, #6c5ce7);
+    border: 1px solid #1f242e;
+}
+
 
 .mid_btn_price:hover {
     box-shadow: 0 0 30px 4px rgba(108, 92, 231, 0.7);

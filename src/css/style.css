@@ -25,6 +25,17 @@ body {
 }
 
 
+.jjj {
+    padding: 100px;
+    display: flex;
+
+}
+.jjj_block {
+    background: red;
+    border-radius: 14px;
+}
+
+
 
 
 
